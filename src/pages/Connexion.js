@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-//Coponents
+// Coponents
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 // Style
 import '../styles/Connexion.css';
-//Icons
+// Icons
 import PersonIcon from '@material-ui/icons/Person';
 import LockIcon from '@material-ui/icons/Lock';
 import EmailIcon from '@material-ui/icons/Email';
@@ -25,8 +25,7 @@ const sign_in_btn_clicked =  () => {
 
 const Connexion = () => {
     const [user, setUser] = useState({
-        firstName: '', 
-        lastName: '',
+        username: '',
         email:'', 
         password: '' 
     })
@@ -39,7 +38,7 @@ const Connexion = () => {
     const loginSubmit = async e =>{
         e.preventDefault()
         try {
-            const response = await axios.post('http://localhost:3030/api/v1/users/login', {...user})
+            const response = await axios.post('http://localhost:8080/api/v1/users/login', {...user})
             localStorage.setItem('Authentification', JSON.stringify(response.data))
             window.location.href = "/";
             alert('you have been loged successfully!')
@@ -51,7 +50,7 @@ const Connexion = () => {
     const registerSubmit = async e =>{
         e.preventDefault()
         try {
-            const response = await axios.post('http://localhost:3030/api/v1/users', {...user})
+            const response = await axios.post('http://localhost:8080/api/v1/users', {...user})
             localStorage.setItem('Authentification', JSON.stringify(response.data))
             window.location.href = "http://localhost:3000/Connexion";
             alert('you have been registered successfully!')

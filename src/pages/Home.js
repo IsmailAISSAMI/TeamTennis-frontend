@@ -1,10 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-//import Footer from '../Acceuil/Footer';
-import Banner from '../Acceuil/Banner';
-import Info from '../Acceuil/Info';
-import Coach from '../Acceuil/Coach';
 
 
 const Home = () => {
