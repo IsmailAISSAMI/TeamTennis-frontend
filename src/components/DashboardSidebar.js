@@ -9,31 +9,31 @@ import AssessmentIcon from "@material-ui/icons/Assessment";
 
 function DashboardSidebar() {
   return (
-    <nav className="col-md-2 d-none d-md-block bg-light sidebar">
+    <nav className="col-md-2 d-none d-md-block bg-dark sidebar">
       <div className="sidebar-sticky">
         <ul className="nav flex-column">
           <li className="nav-item">
             <NavLink to="/#" className="nav-link">
               <DashboardIcon />
-              Dashboard
+              <span>Dashboard</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/#" className="nav-link">
               <PeopleAltIcon />
-              Clients
+              <span>Clients</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/#" className="nav-link">
               <DescriptionIcon />
-              Subscriptions
+              <span>Subscriptions</span>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/#" className="nav-link">
               <AssessmentIcon />
-              Reports
+              <span>Reports</span>
             </NavLink>
           </li>
         </ul>

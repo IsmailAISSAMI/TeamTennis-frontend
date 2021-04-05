@@ -1,0 +1,19 @@
+.sidebar-sticky{
+    height: 100vh;
+
+    a{
+        color: azure;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        span{
+            margin-left: 5px;
+        }
+    }
+
+    a:hover{
+        color: #000;
+        font-weight: 700;
+        background-color: azure;
+    }
+}

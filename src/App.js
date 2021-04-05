@@ -4,10 +4,8 @@ import Home from './pages/Home';
 import Connexion from './pages/Connexion';
 import Dashboard from './pages/Dashboard';
 
-
 const App = () => {
   return (
-
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
