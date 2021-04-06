@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 // COMPONENTS
 import DashboardSidebar from "../../components/DashboardSidebar";
 // ICONS
 import FolderIcon from "@material-ui/icons/Folder";
+import AddBoxIcon from '@material-ui/icons/AddBox';
 
 function Clients() {
   const [users, setUsers] = useState([]);
@@ -39,7 +41,13 @@ function Clients() {
               <FolderIcon style={{ fontSize: 40 }} />
               <span>Dashboard &gt; client</span>
             </h1>
-            <button type="button" className="btn btn-dark">Add User</button>
+            <NavLink
+              to="/dashboard/clients/register"
+              className="btn btn-dark add__button"
+            >
+              <span className="add__button__text">Add User</span>
+              <AddBoxIcon />
+            </NavLink>
           </div>
           <table className="table table-striped">
             <thead>

@@ -7,3 +7,14 @@
         margin-left: 10px;
     }
 }
+
+.add__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    .add__button__text{
+        margin-right: 10px;
+    }
+}
