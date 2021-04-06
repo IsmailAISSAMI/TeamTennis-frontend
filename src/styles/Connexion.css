@@ -30,7 +30,7 @@ input {
   z-index: 5;
 }
 /*  Form    */
-form {
+.forms-container > form {
   display: flex;
   align-items: center;
   justify-content: center;

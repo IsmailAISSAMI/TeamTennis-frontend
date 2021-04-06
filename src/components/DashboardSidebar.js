@@ -13,13 +13,13 @@ function DashboardSidebar() {
       <div className="sidebar-sticky">
         <ul className="nav flex-column">
           <li className="nav-item">
-            <NavLink to="/#" className="nav-link">
+            <NavLink to="#" className="nav-link">
               <DashboardIcon />
               <span>Dashboard</span>
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/#" className="nav-link">
+            <NavLink to="/dashboard/clients" className="nav-link">
               <PeopleAltIcon />
               <span>Clients</span>
             </NavLink>
