@@ -38,8 +38,8 @@ function AddClients() {
       const response = await axios.post("http://localhost:8080/api/v1/users", {
         ...user,
       });
-      localStorage.setItem("Authentification", JSON.stringify(response.data));
-      window.location.href = "http://localhost:3000/Connexion";
+      console.log(response)
+      window.location.href = "http://localhost:3000/dashboard/clients";
       alert("you have been registered successfully!");
     } catch (err) {
       alert(err);
